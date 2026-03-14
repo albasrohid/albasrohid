@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg">
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="profil.html">Profil</a></li>
+<li><a href="dokumentasi.html">Dokumentasi</a></li>
+<li><a href="daftar.html">Daftar</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+<h2>FAQ</h2>
+
+<div class="faq-item">
+<div class="faq-question">Apa tujuan yayasan?</div>
+<div class="faq-answer">Untuk kegiatan sosial, pendidikan dan dakwah.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Bagaimana cara mendaftar?</div>
+<div class="faq-answer">Silakan isi formulir pada menu daftar.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Dimana melihat dokumentasi?</div>
+<div class="faq-answer">Buka menu dokumentasi.</div>
+</div>
+
+</div>
+
+<script>
+let q=document.querySelectorAll(".faq-question");
+q.forEach(el=>{
+el.onclick=()=>{
+let a=el.nextElementSibling;
+a.style.display=a.style.display==="block"?"none":"block";
+}
+});
+</script>
+
+</body>
+</html>
